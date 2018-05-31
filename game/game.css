@@ -64,10 +64,21 @@ table {
 
 #hiwBtnDiv {
     width: 400px;
-    margin: 20px auto 80px auto;
+    margin: 20px auto 0 auto;
     text-align: center; 
 }
 
+#showOperations {
+    margin: 20px  auto 0 auto;
+    text-align: left;
+    display: none;
+    width: 250px;
+    height: 130px;
+    background-color: black;
+    border: #b0d606 solid 2px;
+    border-radius: 15px;
+    color: #e7e7e7;
+}
 
 
 

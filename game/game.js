@@ -8,8 +8,10 @@ let numbers = document.querySelectorAll('.number'),
     MemoryCurrentNumber = 0,
     MemoryNewNumber = false,
     MemoryPendingOperation = '',
-    operationList = document.getElementById('operationList');
-    showedList = false;
+    operationList = document.getElementById('operationList'),
+    showedList = false,
+    showOperations = document.getElementById('showOperations');
+    showedDivList = false;
 
 // Adding Listeners++++++++++
 for (let i = 0; i < numbers.length; i++) {
@@ -103,7 +105,17 @@ function clearFunc(id) {
 }
 
 function howItWorks() {
+    if(!showedDivList) {
+        showOperations.style.display = "block";
+        showedDivList = true;
+    } else {
+        showOperations.style.display = "none";
+        showedDivList = false;
+    }
+
     if(showedList !== true) {
+        
+       
         for (let i = 0; i < operations.length; i++) {
             let newLi = document.createElement('li');
             let operationText = operations[i].alt;
