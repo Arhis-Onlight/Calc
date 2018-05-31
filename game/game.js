@@ -13,7 +13,7 @@ let numbers = document.querySelectorAll('.number'),
     showOperations = document.getElementById('showOperations');
     showedDivList = false;
 
-// Adding Listeners++++++++++
+// Adding Listeners
 for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
     number.addEventListener('click', function(e) {
@@ -30,15 +30,12 @@ for (let i = 0; i < operations.length; i++) {
 
 for (let i = 0; i < clearBtns.length; i++) {
     let clearBtn = clearBtns[i];
-    clearBtn.addEventListener('click', function(e){
-        
+    clearBtn.addEventListener('click', function(e){        
       clearFunc(e.srcElement.id)
     });
 }
-
 decimalBtn.addEventListener('click', decimal);
 howItWorksBtn.addEventListener('click', howItWorks);
-
 
 // Rebound functions
 function numberPress(number) {
@@ -51,8 +48,7 @@ function numberPress(number) {
         } else {
             display.value += number;
         }   
-    }       
-    console.log(`Click on the number ${number}`);
+    }
 }
 
 function operation(op) {
@@ -76,7 +72,6 @@ function operation(op) {
         display.value = MemoryCurrentNumber;
         MemoryPendingOperation = op;
     }
-    console.log(`Click! on an operation ${op}`);
 }
 
 function decimal() {
@@ -112,10 +107,7 @@ function howItWorks() {
         showOperations.style.display = "none";
         showedDivList = false;
     }
-
-    if(showedList !== true) {
-        
-       
+    if(showedList !== true) { 
         for (let i = 0; i < operations.length; i++) {
             let newLi = document.createElement('li');
             let operationText = operations[i].alt;
@@ -123,9 +115,5 @@ function howItWorks() {
             operationList.appendChild(newLi);
         }
         showedList = true;
-    }
-    
-    
-    
-    console.log("Click! on the \"How it works?\"");
+    }     
 }
