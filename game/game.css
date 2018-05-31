@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "a_LCDNova";
+    src: url('../fonts/a_lcdnova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.btn {
+    width: 90px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border: 2px solid #eaeaea;
+    font-size: 27px;
+    color: #666666;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d83e3e;
+    color: #f2f2f2;
+}
+
+#output {
+    direction: rtl;
+    background-color: #0c0c0c;
+    color: #e7e7e7;
+    width: 400px;
+    height: 75px;
+    outline: #0c0c0c solid 2px;
+    outline-offset: 5px;
+    box-shadow: #0c0c0c 0 0 10px;
+    padding: 0 10px;
+    font-size: 50px;
+    font-family: 'a_LCDNova';
+}
+
+#calc {
+    outline: #0c0c0c solid 2px;
+    outline-offset: 30px;
+    width: 400px;
+    margin: 40px auto; 
+}
+
+table {
+    margin: 10px 0 0 0;
+}
+
+#howItWorksID {
+    width: 240px;
+    height: 80px;
+    color: #e7e7e7;
+    font-weight: bold;
+    background-color: #d83e3e;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow:  #0c0c0c 0 0 20px;
+}
+#howItWorksID:hover {
+    font-size: 33px;
+}
+
+#hiwBtnDiv {
+    width: 400px;
+    margin: 20px auto 80px auto;
+    text-align: center; 
+}
+
+
+
+
+:-moz-placeholder {
+    color: rgb(31, 30, 30);
+}
+
+:-ms-input-placeholder {
+    color: rgb(31, 30, 30);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(31, 30, 30);
+}

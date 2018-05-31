@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        
+<h1 id="hTest">Test</h1>
+<script>
+        function changeColor() {
+            
+            console.log("Change LOG function");
+            let hTestColor = document.getElementById("hTest").style.color;
+            console.log(hTestColor);
+            if (hTestColor == "red") {
+                document.getElementById("hTest").style.color = "yellow";
+            } else {
+                document.getElementById("hTest").style.color = "red";
+            }
+        }
+</script>
+<input value="tess" type="button" onclick="changeColor()" />
+<p class="especial">Text</p>
+</body>
+</html>

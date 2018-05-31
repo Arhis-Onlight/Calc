@@ -1,0 +1,12 @@
+p {
+    color: green;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: burlywood;
+    margin: 4vw;
+    width: 10vw;
+    font-size: 2.3vw;
+    text-align: center;
+    outline: 1vw solid lightgreen;
+    outline-offset: 0.6vw;
+}
