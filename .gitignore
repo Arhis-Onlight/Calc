@@ -6,3 +6,11 @@ node_modules
 *.log
 dist
 public/dist
+es6
+public
+.babelrc
+inde.html
+package.json
+package-lock.json
+gulpfile.js
+.eslintrc.js
