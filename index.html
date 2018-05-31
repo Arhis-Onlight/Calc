@@ -12,42 +12,41 @@
 <div id="showOperations">
     <ul id="operationList"></ul>
 </div>
-
 <div id="calc">
-<input type="text" id="output" disabled="disabled" value="0" placeholder="0000000000000" />
-<table style="border-spacing: 7px;">
-<tr>
-    <td><input type="button" class="clearBtn btn" id ="ce" value="ce" /></td>
-    <td><input type="button" class="clearBtn btn" id ="c"  value="c"  /></td>
-    <td><input type="button" alt="Деление" class="operation btn" value="/" /></td>
-    <td><input type="button" alt="Умножение" class="operation btn" value="*" /></td>
-</tr> 
-<tr>
-    <td><input type="button" class="number btn" value="7" /></td>
-    <td><input type="button" class="number btn" value="8" /></td>
-    <td><input type="button" class="number btn" value="9" /></td>
-    <td><input type="button" alt="Вычетание" class="operation btn" value="-" /></td>
-</tr>
-<tr>
-    <td><input type="button" class="number btn" value="4" /></td>
-    <td><input type="button" class="number btn" value="5" /></td>
-    <td><input type="button" class="number btn" value="6" /></td>
-    <td><input type="button" alt="Прибавление" class="operation btn" value="+" /></td>
-</tr>
-<tr>
-    <td><input type="button" class="number btn" value="1" /></td>
-    <td><input type="button" class="number btn" value="2" /></td>
-    <td><input type="button" class="number btn" value="3" /></td>
-    <td rowspan="2"><input style="height: 100px;" id = "result"
-         type="button" alt="Результат" class=" operation btn" value="=" /></td>
+    <input type="text" id="output" disabled="disabled" value="0" />
+    <table style="border-spacing: 7px;">
+    <tr>
+        <td><input type="button" class="clearBtn btn" id ="ce" value="ce" /></td>
+        <td><input type="button" class="clearBtn btn" id ="c"  value="c"  /></td>
+        <td><input type="button" alt="Деление" class="operation btn" value="/" /></td>
+        <td><input type="button" alt="Умножение" class="operation btn" value="*" /></td>
+    </tr> 
+    <tr>
+        <td><input type="button" class="number btn" value="7" /></td>
+        <td><input type="button" class="number btn" value="8" /></td>
+        <td><input type="button" class="number btn" value="9" /></td>
+        <td><input type="button" alt="Вычетание" class="operation btn" value="-" /></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="number btn" value="4" /></td>
+        <td><input type="button" class="number btn" value="5" /></td>
+        <td><input type="button" class="number btn" value="6" /></td>
+        <td><input type="button" alt="Прибавление" class="operation btn" value="+" /></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="number btn" value="1" /></td>
+        <td><input type="button" class="number btn" value="2" /></td>
+        <td><input type="button" class="number btn" value="3" /></td>
+        <td rowspan="2"><input style="height: 100px;" id = "result"
+            type="button" alt="Результат" class=" operation btn" value="=" /></td>
+        
+    </tr>
+    <tr>
+        <td colspan="2"><input style="width: 180px;" type="button" class="number btn" value="0" /></td>
+        <td><input type="button" class="btn" id = "decimal" value="." /></td>
     
-</tr>
-<tr>
-    <td colspan="2"><input style="width: 180px;" type="button" class="number btn" value="0" /></td>
-    <td><input type="button" class="btn" id = "decimal" value="." /></td>
-   
-</tr>
-</table>
+    </tr>
+    </table>
 </div>
 <script src="game/game.js"></script>
 </body>
