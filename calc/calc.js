@@ -99,8 +99,8 @@ function clearFunc(id) {
     }
 }
 
-function howItWorks() {
-    if(!showedDivList) {
+function howItWorks () {
+    if (!showedDivList) {
         showOperations.style.display = "block";
         showedDivList = true;
     } else {

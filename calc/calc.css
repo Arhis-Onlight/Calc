@@ -24,7 +24,7 @@
 }
 
 #output {
-    direction: rtl;
+    text-align: right;
     background-color: #0c0c0c;
     color: #e7e7e7;
     width: 400px;
